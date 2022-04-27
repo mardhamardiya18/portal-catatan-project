@@ -39,3 +39,66 @@
 .row-menu .offcanvas-start{
     width: 60% !important;
 }
+
+/* Header Style */
+.header{
+    margin-top: 80px;
+}
+
+.header .img-box1{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header .img-box1 .detail, .header .img-box2 .detail{
+    background: linear-gradient(178.72deg, rgba(0, 0, 0, 0) 22.9%, #000000 114.41%);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.header .img-box2{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header .img-box1:hover .img-hero, .header .img-box2:hover .img-hero{
+    transform: scale(1.1);
+    object-fit: cover;
+}
+
+.img-box2 .category{
+    font-size: 10px;
+}
+
+.img-box2 .title{
+    font-size: 16px;
+}
+
+.img-box2 .name, .img-box2 .date{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+    .header{
+        margin-top: 30px;
+    }
+
+    .img-box1 .category, .img-box2 .category{
+        font-size: 8px;
+    }
+
+    .img-box1 .title, .img-box2 .title{
+        font-size: 14px;
+    }
+
+    .img-box1 .name, .img-box1 .date, .img-box2 .name, .img-box2 .date{
+        font-size: 10px;
+    }
+}
+

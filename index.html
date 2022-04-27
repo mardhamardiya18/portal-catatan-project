@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="png/img" href="assets/images/logo.png" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -36,42 +37,60 @@
     <!-- Navbar Start -->
     <nav class="nav-view pb-3">
       <div class="container flex-column">
-       
         <!-- Row Menu -->
         <div class="row justify-content-between row-menu py-3">
           <div>
-            <a data-bs-toggle="offcanvas" href="#sidebarmenu" role="button" aria-controls="offcanvasExample" class="btn btn-danger d-lg-none">Menu</a>
+            <a
+              data-bs-toggle="offcanvas"
+              href="#sidebarmenu"
+              role="button"
+              aria-controls="offcanvasExample"
+              class="btn btn-dark d-lg-none"
+              >Menu</a
+            >
           </div>
 
           <!-- sidebar menu -->
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarmenu" aria-labelledby="offcanvasExampleLabel">
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="sidebarmenu"
+            aria-labelledby="offcanvasExampleLabel"
+          >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="offcanvas-body p-0">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="#" class="text-dark">Home</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">About</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Contact</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Advertise</a></li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Home</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">About</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Contact</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Advertise</a>
+                </li>
               </ul>
-              
+
               <div class="box-sosmed mt-5 d-flex justify-content-around">
-                <a href="#"
-                  ><i class="bx bxl-gmail"></i
-                ></a>
-                <a href="#"
-                  ><i class="bx bxl-twitter"></i
-                ></a>
-                <a href="#"
-                  ><i class="bx bxl-facebook"></i
-                ></a>
+                <a href="#"><i class="bx bxl-gmail"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
                 <a href="#"><i class="bx bxl-instagram-alt"></i></a>
               </div>
             </div>
           </div>
-         
+
           <div class="col-md-4 d-none d-lg-block">
             <ul class="navbar-nav flex-row">
               <li class="nav-item">
@@ -89,7 +108,9 @@
             </ul>
           </div>
 
-          <div class="col-md-3 d-lg-flex d-none align-items-center justify-content-end">
+          <div
+            class="col-md-3 d-lg-flex d-none align-items-center justify-content-end"
+          >
             <div class="box-sosmed">
               <a href="#" class="d-inline-block me-2"
                 ><i class="bx bxl-gmail"></i
@@ -132,24 +153,42 @@
 
         <!-- Row Kategori -->
         <div class="row px-2">
-          <a href="#collapseKategori" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseKategori" class="btn d-block btn-danger d-lg-none">Pilih Kategori</a>
+          <a
+            href="#collapseKategori"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseKategori"
+            class="btn d-block btn-dark d-lg-none"
+            >Pilih Kategori</a
+          >
           <div class="collapse mt-3" id="collapseKategori">
             <div class="card card-body">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="#" class="text-dark">Teknologi</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Ekonomi</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Bisnis</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Olahraga</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Kesehatan</a></li>
-                <li class="list-group-item"><a href="#" class="text-dark">Gaya Hidup</a></li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Teknologi</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Ekonomi</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Bisnis</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Olahraga</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Kesehatan</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Gaya Hidup</a>
+                </li>
               </ul>
             </div>
           </div>
 
-
-
           <div class="col-lg-8 d-none d-lg-block">
-            <ul class="navbar-nav flex-row ">
+            <ul class="navbar-nav flex-row">
               <li class="nav-item">
                 <a class="nav-link active text-dark" href="#">Teknologi</a>
               </li>
@@ -178,6 +217,108 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 d-flex justify-content-center">
+            <div class="img-box1 position-relative">
+              <img
+                src="assets/images/hero1.png"
+                class="img-fluid img-hero d-block w-100"
+                alt=""
+              />
+              <div class="detail">
+                <div class="content bottom-0 position-absolute p-sm-4 px-2 py-3">
+                  <p class="category btn btn-outline-light">Bisnis</p>
+                  <h4 class="title text-white">
+                    Mengatur Pendelegasian Tugas dalam Kerja
+                  </h4>
+                  <div class="author text-white d-flex mt-3">
+                    <div class="user d-flex align-items-center">
+                      <i class="bx bx-user"></i>
+                      <p class="name m-0 ms-2">Mardha Mardiya</p>
+                    </div>
+  
+                    <div class="publish text-white align-items-center d-flex ms-3">
+                      <i class="bx bx-time-five"></i>
+                      <p class="date m-0 ms-2">10 April 2022</p>
+                    </div>
+                  </div>
+                </div>        
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-sm-4 mt-lg-0 mt-2">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="img-box2 position-relative">
+                  <img
+                    src="assets/images/hero2.png"
+                    class="img-fluid img-hero"
+                    alt=""
+                  />
+                  <div class="detail text-white">
+                    <div class="content position-absolute bottom-0 p-sm-3 p-2">
+                      <p class="category btn btn-outline-light">Teknologi</p>
+                      <h4 class="title">
+                        Teknologi Ramah Lingkungan pada Body Flagship 
+                        Realme Terbaru
+                      </h4>
+                      <div class="author d-flex mt-3">
+                        <div class="user d-flex align-items-center">
+                          <i class="bx bx-user"></i>
+                          <p class="name m-0 ms-1">Mardha Mardiya</p>
+                        </div>
+  
+                        <div class="publish d-flex align-items-center ms-3">
+                          <i class="bx bx-time-five"></i>
+                          <p class="date m-0 ms-1">10 April 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6 mt-lg-3 mt-2">
+                <div class="img-box2 position-relative">
+                  <img
+                    src="assets/images/hero3.png"
+                    class="img-fluid img-hero"
+                    alt=""
+                  />
+                  <div class="detail text-white">
+                    <div class="content position-absolute bottom-0 px-3 py-3">
+                      <p class="category btn btn-outline-light">Teknologi</p>
+                      <h4 class="title">
+                        Robot Process Automation yang Gantikan Manusia
+
+                      </h4>
+                      <div class="author d-flex mt-3">
+                        <div class="user d-flex align-items-center">
+                          <i class="bx bx-user"></i>
+                          <p class="name m-0 ms-1">Mardha Mardiya</p>
+                        </div>
+  
+                        <div class="publish d-flex align-items-center ms-3">
+                          <i class="bx bx-time-five"></i>
+                          <p class="date m-0 ms-1">10 April 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
