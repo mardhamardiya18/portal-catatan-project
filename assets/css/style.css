@@ -101,7 +101,6 @@ body{
     max-width: 380px;
     border: none;
     border-radius: 20px;
-    background-color: transparent;
 }
 
 .content .title{
@@ -156,6 +155,10 @@ body{
 
     .header .img-box1 .name, .header .img-box1 .date, .header .img-box2 .name, .header .img-box2 .date{
         font-size: 10px;
+    }
+
+    .content .name, .content .date{
+        font-size: 13px;
     }
 }
 
