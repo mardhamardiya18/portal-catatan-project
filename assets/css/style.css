@@ -1,0 +1,41 @@
+*{
+    text-decoration: none !important;
+    list-style: none;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+    max-width: 1200px;
+}
+
+/* Navbar Style */
+.nav-view{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-view hr{
+    opacity: 0.1;
+}
+
+.row-menu .nav-item{
+    font-weight: 300;
+}
+.row-menu .nav-item.margin-item{
+    margin-left: 30px;
+}
+
+.row-menu a{
+    font-size: 13px;
+}
+
+.row-menu .box-sosmed i{
+    font-size: 20px;
+    color: #3A3845;
+}
+
+.row-menu .offcanvas-start{
+    width: 60% !important;
+}
