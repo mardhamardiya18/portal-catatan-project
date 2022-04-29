@@ -5,6 +5,6 @@ var swiper = new Swiper(".mySwiper", {
       dynamicBullets: true,
     },
     autoplay: {
-        delay : 1200
+        delay : 2000
     }
   });

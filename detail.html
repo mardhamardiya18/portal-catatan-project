@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="png/img" href="assets/images/logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="assets/css/detail.css" />
+
+    <title>Portal Catatan | Detail</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="nav-view pb-3">
+      <div class="container flex-column">
+        <!-- Row Menu -->
+        <div class="row justify-content-between row-menu py-3">
+          <div>
+            <a
+              data-bs-toggle="offcanvas"
+              href="#sidebarmenu"
+              role="button"
+              aria-controls="offcanvasExample"
+              class="btn btn-dark d-lg-none"
+              >Menu</a
+            >
+          </div>
+
+          <!-- sidebar menu -->
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="sidebarmenu"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body p-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Home</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">About</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Contact</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Advertise</a>
+                </li>
+              </ul>
+
+              <div class="box-sosmed mt-5 d-flex justify-content-around">
+                <a href="#"><i class="bx bxl-gmail"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-none d-lg-block">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">Home</a>
+              </li>
+              <li class="nav-item margin-item">
+                <a class="nav-link text-dark" href="#">About</a>
+              </li>
+              <li class="nav-item margin-item">
+                <a class="nav-link text-dark" href="#">Contact</a>
+              </li>
+              <li class="nav-item margin-item">
+                <a class="nav-link text-dark" href="#">Advertise</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-md-3 d-lg-flex d-none align-items-center justify-content-end"
+          >
+            <div class="box-sosmed">
+              <a href="#" class="d-inline-block me-2"
+                ><i class="bx bxl-gmail"></i
+              ></a>
+              <a href="#" class="d-inline-block me-2"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="#" class="d-inline-block me-2"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Row Banner -->
+        <div class="row">
+          <div class="col-lg-6 d-flex d-lg-block justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/images/logotype.png"
+                alt=""
+                width="150"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center mt-4 mt-lg-0">
+            <div class="img-box">
+              <img
+                src="assets/images/banner-nav.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <!-- Row Kategori -->
+        <div class="row px-2">
+          <a
+            href="#collapseKategori"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseKategori"
+            class="btn d-block btn-dark d-lg-none"
+            >Pilih Kategori</a
+          >
+          <div class="collapse mt-3" id="collapseKategori">
+            <div class="card card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Teknologi</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Ekonomi</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Bisnis</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Olahraga</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Kesehatan</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-dark">Gaya Hidup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8 d-none d-lg-block">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">Teknologi</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link text-dark" href="#">Ekonomi</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link text-dark" href="#">Bisnis</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link text-dark" href="#">Olahraga</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link text-dark" href="#">Kesehatan</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link text-dark" href="#">Gaya Hidup</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-lg-flex justify-content-end d-none">
+            <div class="search">
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content Start -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row row-title">
+              <div class="col-12">
+                <h1 class="title">Cara Membuat Aplikasi Dengan Mudah</h1>
+              </div>
+            </div>
+            <div class="row justify-content-between mt-2 row-author">
+              <div
+                class="col-sm-8 d-flex align-items-center justify-content-between"
+              >
+                <div class="author d-flex align-items-center">
+                  <i class="bx bx-user"></i>
+                  <p class="name m-0 ms-2 text-muted">Mardha Mardiya</p>
+                </div>
+                <p class="date m-0 text-muted">2 minggu yang lalu</p>
+                <p class="address m-0 text-muted">Malang, Jawa timur</p>
+              </div>
+              <div class="col-sm-2 mt-4 mt-sm-0 sosmed">
+                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row row-body mt-5">
+              <div class="col-12">
+                <img
+                  src="assets/images/blog-detail.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 d-flex mt-4">
+                <div class="comment d-flex align-items-center">
+                  <i class="bx bx-comment"></i>
+                  <p class="comment-count m-0 ms-2">12 comments</p>
+                </div>
+                <div class="viewer d-flex align-items-center ms-4">
+                  <i class="bx bx-show"></i>
+                  <p class="view-count m-0 ms-2">12k dilihat</p>
+                </div>
+              </div>
+
+              <div class="col-12 mt-5 col-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veniam suscipit ipsa provident sapiente nemo eveniet, voluptas
+                  tempore temporibus. Repudiandae et totam sapiente repellat
+                  aliquid minus earum quia dolorum, eum, fuga architecto quod
+                  culpa, quasi autem. Voluptas dolorum laboriosam rem saepe
+                  aliquam temporibus tenetur perferendis! Alias voluptates
+                  possimus nisi perferendis autem.Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Veniam suscipit ipsa provident
+                  sapiente nemo eveniet, voluptas tempore temporibus.
+                  Repudiandae et totam sapiente repellat aliquid minus earum
+                  quia dolorum, eum, fuga architecto quod culpa, quasi autem.
+                  Voluptas dolorum laboriosam rem saepe aliquam temporibus
+                  tenetur perferendis! Alias voluptates possimus nisi
+                  perferendis autem.
+                </p>
+
+                <img
+                  src="assets/images/banner-nav.png"
+                  class="img-fluid rounded-3"
+                  alt=""
+                />
+
+                <p class="mt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Veniam suscipit ipsa provident sapiente nemo eveniet, voluptas
+                  tempore temporibus. Repudiandae et totam sapiente repellat
+                  aliquid minus earum quia dolorum, eum, fuga architecto quod
+                  culpa, quasi autem. Voluptas dolorum laboriosam rem saepe
+                  aliquam temporibus tenetur perferendis! Alias voluptates
+                  possimus nisi perferendis autem.Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Veniam suscipit ipsa provident
+                  sapiente nemo eveniet, voluptas tempore temporibus.
+                  Repudiandae et totam sapiente repellat aliquid minus earum
+                  quia dolorum, eum, fuga architecto quod culpa, quasi autem.
+                  Voluptas dolorum laboriosam rem saepe aliquam temporibus
+                  tenetur perferendis! Alias voluptates possimus nisi
+                  perferendis autem.
+                </p>
+              </div>
+
+              <div class="col-12 mt-4">
+                <p>Tags :</p>
+                <div class="tag">
+                  <a href="#"><div class="badge bg-danger">Teknologi</div></a>
+                  <a href="#"
+                    ><div class="badge bg-danger">Ekonomi Digital</div></a
+                  >
+                  <a href="#"
+                    ><div class="badge bg-danger">4.0 Industri</div></a
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 mt-5">
+                <div class="card p-4">
+                  <form action="">
+                    <textarea
+                      id=""
+                      cols="30"
+                      rows="5"
+                      placeholder="Tulis Komentar"
+                      class="w-100 p-3"
+                    ></textarea>
+                    <div class="mt-4 d-flex align-items-center">
+                      <i class="bx bx-user-circle bx-md text-dark me-3"></i>
+                      <a href="#" class="btn btn-danger">Login</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 mt-5">
+            <div class="banner">
+              <img src="assets/images/ads_side.png" class="img-fluid" alt="" />
+            </div>
+            <div class="recommend mt-4">
+                <h3>Rekomendasi</h3>
+                <div class="news d-flex align-items-center mt-4">
+                    <img src="assets/images/rekomendasi.png" alt="">
+                    <div class="detail ms-3">
+                        <h3 class="title">Robot Process Automation 
+                            yang Gantikan Manusia</h3>
+                        <div class="author d-flex align-items-center justify-content-between mt-2">
+                            <div class="user d-flex align-items-center">
+                                <i class='bx bx-user' ></i>
+                                <p class="name m-0 ms-2">Mardha Mardiya</p>
+                            </div>
+                            <div class="date ms-3 d-flex align-items-center">
+                                <i class='bx bx-time-five' ></i>
+                                <p class="date m-0 ms-2">10 April 2022</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="news d-flex align-items-center mt-4">
+                    <img src="assets/images/rekomendasi.png" alt="">
+                    <div class="detail ms-3">
+                        <h3 class="title">Robot Process Automation 
+                            yang Gantikan Manusia</h3>
+                        <div class="author d-flex align-items-center justify-content-between mt-2">
+                            <div class="user d-flex align-items-center">
+                                <i class='bx bx-user' ></i>
+                                <p class="name m-0 ms-2">Mardha Mardiya</p>
+                            </div>
+                            <div class="date ms-3 d-flex align-items-center">
+                                <i class='bx bx-time-five' ></i>
+                                <p class="date m-0 ms-2">10 April 2022</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="news d-flex align-items-center mt-4">
+                    <img src="assets/images/rekomendasi.png" alt="">
+                    <div class="detail ms-3">
+                        <h3 class="title">Robot Process Automation 
+                            yang Gantikan Manusia</h3>
+                        <div class="author d-flex align-items-center justify-content-lg-between  mt-2">
+                            <div class="user d-flex align-items-center">
+                                <i class='bx bx-user' ></i>
+                                <p class="name m-0 ms-2">Mardha Mardiya</p>
+                            </div>
+                            <div class="date ms-3 d-flex align-items-center">
+                                <i class='bx bx-time-five' ></i>
+                                <p class="date m-0 ms-2">10 April 2022</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <p>&copy;2022 All right reserved | Open mind for future</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    text-decoration: none !important;
+    list-style: none;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f0eeee;
+}
+
+
+
+.container{
+    max-width: 1200px;
+}
+
+/* Navbar Style */
+.nav-view{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.nav-view hr{
+    opacity: 0.1;
+}
+
+.row-menu .nav-item{
+    font-weight: 300;
+}
+.row-menu .nav-item.margin-item{
+    margin-left: 30px;
+}
+
+.row-menu a{
+    font-size: 13px;
+}
+
+.row-menu .box-sosmed i{
+    font-size: 20px;
+    color: #3A3845;
+}
+
+.row-menu .offcanvas-start{
+    width: 60% !important;
+}
+
+/* Content Style */
+.content{
+    margin-top: 100px;
+}
+.content .row-title h1{
+    font-size: 28px;
+}
+.content .row-author p{
+ font-size: 14px;
+}
+.content .row-author .sosmed i{
+    font-size: 30px;
+    color: #3A3845;
+}
+.content .row-author .sosmed i:hover{
+    transform: translateY(-5px);
+}
+
+.content .col-body p{
+    text-align: justify;
+}
+
+.content .recommend h3{
+    font-size: 20px;
+}
+.content .recommend .title{
+    font-size: 15px;
+}
+.content .recommend .name, .content .recommend .date{
+font-size: 10px;
+}
+
+@media screen and (max-width:576px) {
+    .content{
+        margin-top: 70px;
+    }
+    .content .row-author p{
+        font-size: 11px;
+       }
+}
